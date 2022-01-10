@@ -23,4 +23,18 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+ 
+  newVolume: function (newVolume) {
+    this.volume = newVolume;
+  },
+  newPocketNum: function (newPocketNum) {
+    this.pocketNum = newPocketNum;
+  }
 };
+console.log("Volume befor:", backpack.volume);
+backpack.newVolume(40);
+console.log("Volume after:", backpack.volume);
+
+console.log("PocketNum befor:", backpack.pocketNum);
+backpack.newPocketNum(30);
+console.log("PocketNum after", backpack.pocketNum);
